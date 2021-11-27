@@ -1,0 +1,124 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-darkccyan: hsl(179, 100%, 13%);
+        
+    /* (paragraphs) */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+
+    /* (background, headings, buttons) */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    padding: 4em 2em;
+}
+
+.card--container {
+    margin: 0 auto;
+    max-width: 315px;
+}
+
+.card--one,
+.card--two,
+.card--three {
+    padding: 3em;
+    padding-bottom: 4em;
+}
+
+.card--one {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card--two {
+    background-color: var(--dark-cyan);
+}
+
+.card--three {
+    background-color: var(--very-darkccyan);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.card--one--heading,
+.card--two--heading,
+.card--three--heading {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    margin: 1em 0;
+
+}
+
+.card--one--text,
+.card--two--text,
+.card--three--text {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+    line-height: 1.5rem;
+    margin-bottom: 2.5em;
+}
+
+.card--one--btn,
+.card--two--btn,
+.card--three--btn {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    background-color: var(--very-light-gray);
+    border-radius: 30px;
+    padding: 1em 3em;
+}
+
+.card--one--btn {
+    color: var(--bright-orange);
+    font-weight: bold;
+}
+
+.card--two--btn {
+    color: var(--dark-cyan);
+    font-weight: bold;
+}
+
+.card--three--btn {
+    color: var(--very-darkccyan);
+    font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+
+    .card--container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1200px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card--one,
+    .card--two,
+    .card--three {
+        width: 300px;
+        padding: 3em;
+        padding-bottom: 4em;
+        border-radius: 0;
+    }
+
+    .card--one--text,
+    .card--two--text,
+    .card--three--text {
+        margin-bottom: 7em;
+    }
+}
