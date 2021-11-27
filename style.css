@@ -76,22 +76,41 @@ body {
     text-decoration: none;
     background-color: var(--very-light-gray);
     border-radius: 30px;
-    padding: 1em 3em;
+    padding: 1em 2.5em;
 }
 
 .card--one--btn {
     color: var(--bright-orange);
-    font-weight: bold;
 }
+
+.card--one--btn:hover,
+.card--one--btn:focus {
+    background: var(--bright-orange);
+    color: var(--transparent-white);
+    border: 2px solid var(--very-light-gray);
+}
+
+.card--two--btn:hover,
+.card--two--btn:focus {
+    background: var(--dark-cyan);
+    color: var(--transparent-white);
+    border: 2px solid var(--very-light-gray);
+}
+
+.card--three--btn:hover,
+.card--three--btn:focus {
+    background: var(--very-darkccyan);
+    color: var(--transparent-white);
+    border: 2px solid var(--transparent-white);
+}
+
 
 .card--two--btn {
     color: var(--dark-cyan);
-    font-weight: bold;
 }
 
 .card--three--btn {
     color: var(--very-darkccyan);
-    font-weight: bold;
 }
 
 @media (min-width: 1000px) {
@@ -115,6 +134,12 @@ body {
         padding: 3em;
         padding-bottom: 4em;
         border-radius: 0;
+    }
+
+    .card--one--heading,
+    .card--two--heading,
+    .card--three--heading {
+        font-size: 2.5rem;
     }
 
     .card--one--text,
